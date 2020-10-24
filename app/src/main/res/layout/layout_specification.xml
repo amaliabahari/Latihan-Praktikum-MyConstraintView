@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_specification"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/spesifikasi"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_spec_display_title"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/display"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_spec_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/content_specs_display"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="51dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_spec_size_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="115dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_spec_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/content_specs_size"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="115dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_battery_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/battery"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="165dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_battery"
+        android:layout_width="0dp"
+        android:layout_height="266dp"
+        android:text="@string/content_specs_battery"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="165dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="105dp" />
+
+    <include
+        layout="@layout/layout_specification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        tools:ignore="ResourceCycle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
